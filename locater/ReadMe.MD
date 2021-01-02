@@ -2,6 +2,7 @@ Pre-requisites
 --------------
 1.Python 3.8
 2.Django
+3.create a .env file in the root directory with with a variable in it as "API_KEY" for mapquest APIs.
 
 Note: modules are placed in requirements.txt
 
