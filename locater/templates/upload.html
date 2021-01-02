@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-sm">
+            <form action="" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="form-group upload-div" id="upload-div">
+                    <label for="upload">Upload the xls file:</label>
+                    <input type="file" class="form-control" name="file" id="file" required>
+                    <br>
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <div class="row messages">
+        {% if message %}
+        <p class="error">{{message}}</p>
+        {% endif %}
+    </div>
+</div>
+
+{% endblock %}

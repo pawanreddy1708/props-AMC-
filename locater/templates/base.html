@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adress locator</title>
+</head>
+<style>
+     .messages, .upload-div {
+        text-align: center;
+        margin-left: 320px;
+        width: 500px;
+        height: 500px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+</style>
+
+<body>
+    <div class="jumbotron">
+        <h1 class="display-4">Address to longitude/latitude</h1>
+        <p class="lead">Simple app that adds your address location with the longitude & latitude.</p>
+        <hr class="my-4">
+        <p>using google geocoding RESTful API's</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="#upload-div" role="button">explore</a>
+        </p>
+    </div>
+    {% block content %}
+    {% endblock %}
+</body>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</html>
